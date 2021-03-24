@@ -11,7 +11,7 @@ EOM;
 }
 
 function getDamage($attack_point) {
-    $val = array_rand(range(100, 500), 1);
+    $val = rand(100, 500);
 
     return $val * $attack_point;
 }

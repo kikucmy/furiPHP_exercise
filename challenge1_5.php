@@ -7,7 +7,7 @@ while ($hp > 0) {
     $num = trim(fgets(STDIN));
 
     if ($num == 1 || $num == 2 || $num == 3) {
-        $attack_point = array_rand(range(500, 3000), 1);
+        $attack_point = rand(500, 3000);
 
         if ($attack_point >= 2000) {
             echo "クリティカルヒット！！\n";
